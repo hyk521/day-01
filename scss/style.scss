@@ -1,0 +1,103 @@
+@import "common.scss";
+@import "_mixin.scss";
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    font-size: px2rem(25px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #ccc;
+    color: #666;
+    .header {
+        width: 100%;
+        height: px2rem(50px);
+        line-height: px2rem(50px);
+        background: #fff;
+        display: flex;
+        justify-content: space-around;
+        .bai {
+            width: px2rem(50px);
+            height: px2rem(50px);
+            background: #fff;
+        }
+    }
+    .section {
+        width: 100%;
+        dl {
+            width: 100%;
+            height: px2rem(80px);
+            padding-left: 5%;
+            margin-top: px2rem(20px);
+            background: #fff;
+            display: flex;
+            dt {
+                margin-top: px2rem(20px);
+                .icon-wode {
+                    width: px2rem(50px);
+                    height: px2rem(50px);
+                    border-radius: 50%;
+                    background: #ccc;
+                    text-align: center;
+                    line-height: px2rem(50px);
+                    font-size: px2rem(28px);
+                }
+            }
+            dd {
+                font-size: px2rem(15px);
+                margin-top: px2rem(30px);
+                margin-left: px2rem(30px);
+            }
+        }
+        .list {
+            width: 100%;
+            li {
+                width: 100%;
+                height: px2rem(50px);
+                background: #fff;
+                border-top: 1px solid #ccc;
+                font-size: px2rem(16px);
+                line-height: px2rem(50px);
+                display: flex;
+                .qqq {
+                    width: 12%;
+                    height: px2rem(50px);
+                    margin-left: 3%;
+                }
+                p {
+                    width: 85%;
+                    height: px2rem(50px);
+                }
+                .zzz {
+                    width: 10%;
+                    height: px2rem(50px);
+                }
+            }
+            li:nth-child(1) {
+                .qqq {
+                    color: orange;
+                }
+            }
+            li:nth-child(2) {
+                .qqq {
+                    color: red;
+                }
+            }
+            li:nth-child(3) {
+                .qqq {
+                    color: lightgreen;
+                }
+            }
+            li:nth-child(4) {
+                .qqq {
+                    color: skyblue;
+                }
+            }
+        }
+    }
+}
